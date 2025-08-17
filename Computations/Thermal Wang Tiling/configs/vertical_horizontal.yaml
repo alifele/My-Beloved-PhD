@@ -1,0 +1,14 @@
+TEMPERATURE: 0.005
+GLUE_TYPES: ['A', 'B', 'C', 'D']
+GLUE_INTERACTION:
+  - [5.0, 5.0, 5.0, 5.0]
+  - [5.0, -1.0, 1.0, 1.0]
+  - [5.0, 1.0, 1.0, -1.0]
+  - [5.0, 1.0, -1.0, -1.0]
+GLUE_BINDING_TO_FREE: {'A': -0.0, 'B': -0.0, 'C': 0.0, 'D': 0.0}
+chem_potentials: {"Seed": 0.0, "T1": 0.0, "T2": 0.0, "T3": 0.0, "T4": 0.0}
+colorMap: {"Seed": "red", "T1": "green", "T2": "blue", "T3": "yellow", "T4": "cyan"}
+tiles:
+  - {north: 'A', east: 'B', south: 'A', west: 'A', name: 'Seed'}
+  - {north: 'C', east: 'B', south: 'C', west: 'B', name: 'T1'}
+  - {north: 'D', east: 'A', south: 'D', west: 'A', name: 'T2'}
