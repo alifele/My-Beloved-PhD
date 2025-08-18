@@ -1,0 +1,486 @@
+\ProvidesPackage{commands}
+
+
+
+%% Packages
+
+%\usepackage[dvips,letterpaper,margin=1.3in]{geometry}
+%\usepackage{geometry}
+%\usepackage{commath}
+\usepackage{minted}
+\usepackage{tensor}
+\usepackage{placeins}
+\usepackage{wrapfig}
+\usepackage{mathtools}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows.meta}
+\usepackage{float}
+%\usepackage{fullpage}[style={margin,empty}]
+\usepackage{enumerate}
+\usepackage[listings,skins,breakable]{tcolorbox}
+\tcbuselibrary{theorems}
+\usepackage{siunitx}
+\usepackage{cancel}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\usepackage{caption}
+\usepackage{placeins}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	citecolor=SectionColor!80!black,
+	linkcolor=cyan!90!black
+}
+\usepackage{nameref}
+\usepackage{xcolor}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usepackage{wasysym}
+\usepackage{xspace}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{fontawesome5}
+
+
+
+%% Table of contents dots
+\usepackage{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+
+
+
+
+%
+%\usepackage{physics}
+%\usepackage{mathdots}
+%\usepackage{yhmath}
+%%\usepackage{cancel}
+%\usepackage{siunitx}
+%\usepackage{array}
+%\usepackage{multirow}
+%\usepackage{gensymb}
+%\usepackage{tabularx}
+%\usepackage{extarrows}
+%\usepackage{afterpage}
+
+
+
+
+
+%% MATH Commands
+\newcommand{\bicon}{\Leftrightarrow}
+\newcommand{\imply}{\Rightarrow}
+\newcommand{\Arg}[1]{\mathrm{Arg}\left({#1}\right)}
+\newcommand{\limi}[1]{\lim_{#1 \rightarrow \infty}}
+\newcommand{\limni}[1]{\lim_{#1 \rightarrow -\infty}}
+\newcommand{\intinf}{\int_{-\infty}^{\infty}}
+\newcommand{\biImp}{\Leftrightarrow}
+\newcommand{\st}{\ \text{s.t.}\ }
+\newcommand{\wh}{\ \text{we have}\ }
+\newcommand{\preIm}[1]{#1^{-1}}
+\newcommand{\nsubset}{\not \subset}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Pset}[1]{\mathcal{P}(#1)}
+\renewcommand{\o}{\circ}
+\newcommand{\oo}{one-to-one\xspace}
+\newcommand{\abs}[1]{|#1|}
+\renewcommand{\Re}[1]{\operatorname{Re}(#1)}
+\renewcommand{\Im}[1]{\operatorname{Im}(#1)}
+\newcommand{\conj}[1]{\overline{#1}}
+\newcommand{\floor}[1]{\lfloor #1 \rfloor}
+\newcommand{\ceil}[1]{\lceil #1 \rceil}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\seq}[1]{\{#1_n\}}
+\newcommand{\AND}{\ \text{and }\xspace}
+\newcommand{\pow}[2]{#1^{#2}}
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\infint}{\int_{-\infty}^{\infty}}
+\renewcommand{\=}[1]{\stackrel{#1}{=}} % for putting numbers above 
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\diagMat}[2]{\begin{pmatrix}
+		#1 & 0 \\
+		0 & #2
+\end{pmatrix}}
+\newcommand{\diagMatFour}[4]{\begin{pmatrix}
+		#1 & 0 & 0 & 0 \\
+		0 & #2 & 0 & 0 \\
+		0 & 0 & #3 & 0 \\
+		0 & 0 & 0 & #4 \\
+\end{pmatrix}}
+
+\newcommand{\eigvect}[2]{v_#1^{[#2]}}
+\newcommand{\vspan}[1]{\operatorname{Span}\{#1\}}
+\newcommand{\vectt}[2]{\begin{pmatrix}
+		#1 \\
+		#2
+\end{pmatrix}}
+\newcommand{\vecttt}[3]{\begin{bmatrix}
+		#1 \\
+		#2 \\
+		#3
+\end{bmatrix}}
+\newcommand{\matt}[4]{\begin{pmatrix}
+		#1 & #2 \\
+		#3 & #4
+\end{pmatrix}}
+
+
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth} 
+
+
+\newcommand{\curl}{\operatorname{curl}}
+\newcommand{\Span}{\operatorname{Span}}
+\newcommand{\grad}{\operatorname{grad}}
+\newcommand{\img}{\operatorname{im}}
+\newcommand{\norm}[1]{\|#1\|}
+
+
+
+%%% Physics Commands
+%\newcommand{\xhat}{\hat{\v{x}}}
+%\newcommand{\yhat}{\hat{\v{y}}}
+%\newcommand{\zhat}{\hat{\v{z}}}
+%\newcommand{\rhat}{\hat{\v{r}}}
+%\newcommand{\shat}{\hat{\v{s}}}
+%\newcommand{\phihat}{\hat{\bm{\phi}}}
+%\newcommand{\thetahat}{\hat{\bm{\theta}}}
+%\newcommand{\m}[1]{\begin{pmatrix}#1\end{pmatrix}}
+%\newcommand{\paulix}{\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}}
+%\newcommand{\pauliy}{\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}}
+%\newcommand{\pauliz}{\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}}
+%\newcommand{\imatrix}{\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}}
+%\newcommand{\zmatrix}{\begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}}
+%\renewcommand{\dyad}[2]{\lvert #1 \rangle \langle #2 \rvert}
+%\renewcommand{\ket}[1]{\lvert #1 \rangle}
+%\renewcommand{\bra}[1]{\langle #1 \rvert}
+%\renewcommand{\braket}[2]{\langle #1 \lvert #2 \rangle}
+
+
+
+%% Environments
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}[section]
+
+
+
+
+
+
+\newcommand{\heading}[1]{
+  \begin{tcolorbox}
+    \begin{center}
+    \begin{Large}
+      \textbf{My Beloved PhD:\ #1} \\
+      \vspace{5pt}
+    \end{Large}
+    \begin{large}
+          Ali Fele Paranj \\
+          alifele@student.ubc.ca \\
+          
+          \vspace{5pt}
+      \emph{\today}
+    \end{large}
+    \end{center}
+  \end{tcolorbox}
+  }
+
+
+
+
+
+
+%\definecolor{propColor}{rgb}{0, 0.47, 0.6} % RGB(0, 204, 255) equivalent
+
+\definecolor{HighDark}{HTML}{003652}
+\definecolor{MedDark}{HTML}{3E80B6}
+\definecolor{LowDark}{HTML}{00798C}
+\definecolor{HighLight}{HTML}{EDAE49}
+\definecolor{LowLight}{HTML}{D1495B}
+
+
+
+\definecolor{propColor}{HTML}{33658a}
+\definecolor{remarkColor}{HTML}{2f4858}
+\definecolor{corColor}{HTML}{86bbd8}
+\definecolor{defColor}{RGB}{242, 100, 25}
+
+
+
+
+
+%% Style for the boxed theorem like structures
+\newtheoremstyle{blacknumbox} % Theorem style name
+{4pt} % Space above
+{6pt} % Space below
+{\normalfont} % Body font
+{} % Indent amount
+{} % Theorem head font
+{} % Punctuation after theorem head
+{0.25em} % Space after theorem head
+{\small\sffamily\bfseries\thmname{#1}~\thmnumber{#2} % Theorem text (e.g. Theorem 2.1)
+	\thmnote{\sffamily\bfseries---~#3.\hspace{0.25em}}} % Optional theorem note
+
+
+%% Style for the unboxed theorem like structures --> Example
+\newtheoremstyle{blacknumNOTboxExample} % Theorem style name
+{6pt} % Space above
+{6pt} % Space below
+{\normalfont} % Body font
+{} % Indent amount
+{} % Theorem head font
+{} % Punctuation after theorem head
+{0.25em} % Space after theorem head
+{\small\sffamily\bfseries{\raisebox{1.25pt}{\tiny\ensuremath{\blacksquare}}}~\thmname{#1}~\thmnumber{#2} % Theorem text (e.g. Theorem 2.1)
+	\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}} % Optional theorem note
+
+
+%% Style for the unboxed theorem like structures --> remark - problem - solution
+\newtheoremstyle{blacknumNOTbox} % Theorem style name
+{6pt} % Space above
+{6pt} % Space below
+{\normalfont} % Body font
+{} % Indent amount
+{} % Theorem head font
+{} % Punctuation after theorem head
+{0.25em} % Space after theorem head
+{\small\sffamily\bfseries~\thmname{#1}~\thmnumber{#2} % Theorem text (e.g. Theorem 2.1)
+	\thmnote{\the\thm@notefont\sffamily\bfseries---~#3.\hspace{0.25em}}} % Optional theorem note
+
+
+
+\theoremstyle{blacknumbox}	
+\newtheorem{definitionT}{Definition}[chapter]
+\newtheorem{strangeObsT}{{\color{red!90!black} \noindent \faHandPaper} Strange Observation}[section]
+\newtheorem{obsBoxT}{Observation}[section]
+\newtheorem*{carefulBoxT}{{\color{LowLight}\faExclamationTriangle}\ Be Careful!}
+\newtheorem{theoremT}{Theorem}[chapter]
+\newtheorem{propositionT}{Proposition}[chapter]
+\newtheorem{corollaryT}{Corollary}[chapter]
+\newtheorem{lemmaT}{Lemma}[chapter]
+\newtheorem{summaryT}{Summary}[chapter]
+\newtheorem{openQuestionT}{\faGraduationCap\ Open Question}[chapter]
+\newtheorem{trickT}{Trick}[chapter]
+
+
+\theoremstyle{blacknumNOTboxExample}
+\newtheorem{exampleT}{Example}[chapter]
+\newtheorem{problemT}{Problem}[chapter]
+\newtheorem*{remark}{Remark}
+
+
+\theoremstyle{blacknumNOTbox}
+\newtheorem{problem}{Problem}[chapter]
+\newtheorem*{solution}{Solution}
+
+
+
+
+%%% Boxed ones: Definition - Theorem - Proposition - Corollary - Lemma - Summary
+%%% Unboxed ones: Remark - Example - Problem - Solution
+
+
+%%% Colors for Boxes
+%% Definition - Summary - Trick: HighLight
+%% Theorem: LowLight
+%% Proposition: MedDark
+%% Lemma - Corollary: HighDark
+
+\usepackage{mdframed}
+
+
+%% Definition box
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=false, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=HighLight!10, % BackgroundColor
+linecolor=red, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=5pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{defBox}
+
+
+%% Summary box and Trick Box
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=true, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=green!4, % BackgroundColor
+linecolor=green!60!black, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=0pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{summaryBox}
+
+
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=true, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=cyan!4, % BackgroundColor
+linecolor=cyan!60!black, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=0pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{observationBox}
+
+%% Theorem box
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=false, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=HighLight!10, % BackgroundColor
+linecolor=HighLight, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=0pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{theoremBox}
+
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=false, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=HighLight!10, % BackgroundColor
+linecolor=HighLight, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=0pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{openQuestionbox}
+
+%% Proposition box
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=false, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=LowLight!10, % BackgroundColor
+linecolor=LowLight, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=0pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{propositionBox}
+
+
+%% Lemma - Corollary Box
+\newmdenv[
+skipabove=7pt, % Whitespace above box
+skipbelow=7pt, % Whitespace below box
+rightline=false, % Right line visible
+leftline=true, % Left line visible
+topline=false, % Top line visible
+bottomline=false, % Bottom line visible
+backgroundcolor=LowDark!90!black!5, % BackgroundColor
+linecolor=LowDark!95!black, % Border color
+linewidth=4pt, % Border width
+innerleftmargin=5pt, % Inside left margin width
+innerrightmargin=5pt, % Inside right margin width
+innertopmargin=0pt, % Inside top margin height
+innerbottommargin=5pt, % Inside bottom margin height
+leftmargin=0cm, % Outside left margin width
+rightmargin=0cm % Outside right margin width
+]{lemmaCorBox}
+
+
+\newenvironment{definition}{\begin{defBox}\begin{definitionT}}{\end{definitionT}\end{defBox}}
+\newenvironment{theorem}{\begin{theoremBox}\begin{theoremT}}{\end{theoremT}\end{theoremBox}}
+\newenvironment{proposition}{\begin{propositionBox}\begin{propositionT}}{\end{propositionT}\end{propositionBox}}
+\newenvironment{lemma}{\begin{lemmaCorBox}\begin{lemmaT}}{\end{lemmaT}\end{lemmaCorBox}}
+\newenvironment{summary}{\begin{summaryBox}\begin{summaryT}}{\end{summaryT}\end{summaryBox}}
+
+
+\newenvironment{trick}{\begin{summaryBox}\begin{trickT}}{\end{trickT}\end{summaryBox}}
+\newenvironment{strangeObs}{\begin{defBox}\begin{strangeObsT}}{\end{strangeObsT}\end{defBox}}
+\newenvironment{observation}{\begin{observationBox}\begin{obsBoxT}}{\end{obsBoxT}\end{observationBox}}
+\newenvironment{beCareful}{\begin{theoremBox}\begin{carefulBoxT}}{\end{carefulBoxT}\end{theoremBox}}
+
+
+\newenvironment{openQuestion}{\begin{openQuestionbox}\begin{openQuestionT}}{\end{openQuestionT}\end{openQuestionbox}}
+
+
+\newenvironment{corollary}{\begin{lemmaCorBox}\begin{corollaryT}}{\end{corollaryT}\end{lemmaCorBox}}
+\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}
+
+\renewenvironment{problem}{\begin{problemT}}{\end{problemT}}
+
+\newcommand{\definitionTautorefname}{Definition}
+\newcommand{\strangeObsTautorefname}{Strange observation}
+\newcommand{\theoremTautorefname}{Theorem}
+\newcommand{\propositionTautorefname}{Proposition}
+\newcommand{\lemmaTautorefname}{Lemma}
+\newcommand{\summaryTautorefname}{Summary}
+\newcommand{\corollaryTautorefname}{Corollary}
+\newcommand{\exampleTautorefname}{Example}
+
+
+
+
+
+\newcounter{myequation}
+%\renewcommand{\theequation}{\thesection.\themyequation}
+%\newcommand{\eqTag}[1]{\refstepcounter{myequation}\tag{\thesection.\themyequation}\label{#1}}
+\newcommand{\eqTag}{\refstepcounter{myequation}\tag{\thesection.\themyequation}}
+%\renewcommand{\equationautorefname}{Eq.}
+
+
+
+

@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "31d166e3e65502c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "266698f38da8ed17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d864befedf8afc36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily Notes/2025-08-18.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-18"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d65e3278176598b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc19b73e38f5b102",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a934ff797ac71549",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a7a5a5e3cda412d6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a40be7da95d9d3ea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "93f23b985bf4dc6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d96d91ae8d59980f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6784232231a9f8a1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2025-W34.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-W34"
+            }
+          },
+          {
+            "id": "6436818a34c84265",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2025-08-18.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-08-18"
+            }
+          },
+          {
+            "id": "6104ffae62e5e1f1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1ebbc90264d8f5d2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2025-W34.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-W34"
+            }
+          },
+          {
+            "id": "727dcc48d11681a1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "dfca2321cdde3237",
+            "type": "leaf",
+            "state": {
+              "type": "google-calendar-view-month",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "GCal Month View"
+            }
+          },
+          {
+            "id": "ac1ede2f48be1249",
+            "type": "leaf",
+            "state": {
+              "type": "google-calendar-view-schedule",
+              "state": {},
+              "icon": "layout-list",
+              "title": "GCal Schedule View"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d864befedf8afc36",
+  "lastOpenFiles": [
+    "Resources/Theses/Algorithmic Self-Assembly of DNA.md",
+    "Important Reources.md",
+    "Important People.md",
+    "People-Groups/Erik Winfree.md",
+    "Resources/Theses/Untitled 1.md",
+    "Resources/Untitled.md",
+    "Resources/Theses",
+    "Untitled 1",
+    "Resources",
+    "().md",
+    "People-Groups",
+    "Daily Notes/2025-08-18.md",
+    "MOC.md",
+    "this is another note.md",
+    "create a link.md",
+    "2025-W34.md",
+    "Daily Notes",
+    "Untitled.canvas",
+    "New stuff/There will be.md",
+    "Welcome.md",
+    "google.com.md",
+    "New stuff"
+  ]
+}

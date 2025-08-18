@@ -1,0 +1,84 @@
+%\documentclass[12pt,a4paper]{book}
+%\usepackage{commands}
+%
+%\begin{document
+%
+%	
+%\end{document}
+\documentclass{labdiary}
+\usepackage{commands}
+\usepackage{natbib} 
+%\setcitestyle{authoryear, open={([},close={)]}}
+%\setcitestyle{numbers,square}
+\bibliographystyle{dinat}
+
+
+
+%\includeonly{Chapters/theoriticalInvestiagtion}
+\title{Hierarchical Self-Assembly}
+\author{Ali Fele Paranj}
+\date{\today}
+
+\begin{document}
+	
+%	\maketitle
+	
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		% If a chapter image has been specified
+		%         \expandafter\ifstrequal\expandafter{Images/vendingMachine.png}{}{}{
+			% Output the chapter image
+			\node[
+			anchor=north west, % Anchor point on the image
+			inner sep=0pt, % Inner padding
+			] at (current page.north west) {\includegraphics[angle=0,height=\paperheight]{images/scalefree.jpg}};
+			%	         }
+	\end{tikzpicture} 
+	
+	
+	\vspace{-0cm}
+	\heading{Hierarchical Self-Assembly}
+	
+	\newpage
+	
+	
+	
+	\tableofcontents
+	
+%	\include{Chapters/StatisticalPhysicsForBiology.tex}
+
+	
+	
+	\part{Discrete Mathematics}
+	\input{Chapters/DiscreteMath/Combinatorics/Combinatorics.tex}
+	\input{Chapters/DiscreteMath/CAT0CubeComplexes/CAT0CubeComplexes.tex}
+	\input{Chapters/DiscreteMath/AlgebraicStructures/AlgebraicStructures.tex}
+	
+	\part{Probability}
+	\input{Chapters/ProbabilityTheory/Probability/Probability.tex}
+	\input{Chapters/ProbabilityTheory/StochasticProcesses/StochasticProcesses.tex}
+	
+	
+	\part{Physics}
+	\input{Chapters/Physics/StatisticalPhysics/StatisticalPhysics.tex}
+	
+	\part{Computing}
+	\input{Chapters/Computing/TheoryOfComputing/TheoryOfComputing.tex}
+	\input{Chapters/Computing/StochasticSimulations/StochasticSimulations.tex}
+	
+	
+	\part{Meetings}
+	\input{Chapters/Meetings/Miranda/Miranda.tex}
+	
+
+	
+	
+	
+
+	\bibliography{References/references} % The filename of the .bib file (without the extension)
+
+	
+
+	
+	
+\end{document}
