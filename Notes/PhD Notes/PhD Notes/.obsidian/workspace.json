@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important Reources.md",
+                "file": "2025-08-20.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Important Reources"
+              "title": "2025-08-20"
             }
           }
         ]
@@ -201,8 +201,9 @@
   },
   "active": "d864befedf8afc36",
   "lastOpenFiles": [
-    "Important People.md",
     "Important Reources.md",
+    "2025-08-20.md",
+    "Important People.md",
     "Daily Notes/2025-08-19.md",
     "Daily Notes/2025-08-18.md",
     "People-Groups/Erik Winfree.md",
