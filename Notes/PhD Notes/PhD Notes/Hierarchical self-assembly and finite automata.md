@@ -1,0 +1,5 @@
+
+The idea of application of automata theory: Every finite automata, partitions the set of all possible inputs into the strings that it accepts and the ones that it does not accept. With this concept, one can design automata that can detect certain patterns in the string. Like the automata that only accepts the string abc or the one that only accepts strings with even number of a-s or any other pattern. Even one can design automata that can detect hierarchical patterns with having sub-automata diagrams that is connected by larger automata. This similarity sparks the potential of using automata in hierarchical self assembly in the sense that encode the interactions between tiles into a code and then the desired self-assembly will be corresponding to an automata that accepts only that string
+
+
+Update: I was able to prototype my idea in ChatGPT and design some basic automata that can generate some patterns, like Serpinksly trangle from Winfree's PhD thesis, etc

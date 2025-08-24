@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Functional Programing.md",
+                "file": "Hierarchical self-assembly and finite automata.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Functional Programing"
+              "title": "Hierarchical self-assembly and finite automata"
             }
           }
         ]
@@ -203,6 +203,7 @@
   "active": "a74fd2e6a2143099",
   "lastOpenFiles": [
     "Functional Programing.md",
+    "Hierarchical self-assembly and finite automata.md",
     "Daily Notes/2025-08-20.md",
     "Important Reources.md",
     "Important People.md",
