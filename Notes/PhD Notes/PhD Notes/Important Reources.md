@@ -11,3 +11,4 @@
 	* self-assembly at all scales: https://www.cs.cmu.edu/afs/cs/academic/class/15398-f05/www/readings/all-scales.pdf
 * Visual SDS
 * Visual GEC
+* DNA Beyond genes book from Springer [link](https://link.springer.com/book/10.1007/978-3-030-36434-2).

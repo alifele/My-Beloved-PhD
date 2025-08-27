@@ -4,103 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c5c34ca15ffbd109",
-        "type": "split",
+        "id": "266698f38da8ed17",
+        "type": "tabs",
         "children": [
           {
-            "id": "266698f38da8ed17",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "a74fd2e6a2143099",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Hierarchical self-assembly and finite automata.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Hierarchical self-assembly and finite automata"
-                }
+            "id": "a74fd2e6a2143099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily Notes/2025-08-27.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "a610295dc3370c99",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Daily Notes/2025-08-26.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2025-08-26"
-                }
-              },
-              {
-                "id": "580aa077b72a8837",
-                "type": "leaf",
-                "state": {
-                  "type": "release-notes",
-                  "state": {
-                    "currentVersion": "1.9.12"
-                  },
-                  "icon": "lucide-book-up",
-                  "title": "Release Notes 1.9.12"
-                }
-              }
-            ],
-            "currentTab": 2
-          },
-          {
-            "id": "449235d1916da347",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "0733b744a1ada866",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "/home/alifeleparanj/Projects/My-Beloved-PhD/Notes/PhD Notes/PhD Notes",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "/bin/sh",
-                        "name": "",
-                        "platforms": {
-                          "linux": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": null
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "Terminal: sh"
-                }
-              }
-            ]
+              "icon": "lucide-file",
+              "title": "2025-08-27"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -280,21 +201,25 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0733b744a1ada866",
+  "active": "a74fd2e6a2143099",
   "lastOpenFiles": [
-    "Important People.md",
-    "Daily Notes/2025-08-26.md",
     "Important Reources.md",
+    "Daily Notes/2025-08-27.md",
+    "Important People.md",
     "Hierarchical self-assembly and finite automata.md",
+    "().md",
+    "Images/Pasted image 20250824073118.png",
+    "Images/Pasted image 20250824073110.png",
+    "meta",
+    "papers",
+    "Daily Notes/2025-08-26.md",
     "Resources/Theses/Algorithmic Self-Assembly of DNA.md",
     "Untitled.base",
     "Untitled.canvas",
     "Images/Pasted image 20250824073240.png",
-    "Images/Pasted image 20250824073110.png",
     "Images",
     "Functional Programing.md",
     "Images/Pasted image 20250824073146.png",
-    "Images/Pasted image 20250824073118.png",
     "Images/Pasted image 20250824073136.png",
     "Daily Notes/2025-08-20.md",
     "Daily Notes/2025-08-19.md",
@@ -305,7 +230,6 @@
     "Resources/Theses",
     "Untitled 1",
     "Resources",
-    "().md",
     "People-Groups",
     "MOC.md",
     "this is another note.md",
