@@ -17,5 +17,8 @@
 * Daan Frenkel [link](https://www.ch.cam.ac.uk/person/df246) Cambridge university. Chemistry department working on self assembly
 * Aleks Reinhardt [link](https://www.ch.cam.ac.uk/person/ar732) Cambrdige university. Chemistry department
 * Lulu Qian: The painting of Mona Lisa by DNA origami was from their group [link](https://www.nature.com/articles/nature24655). Cited by this review paper [link](https://pubs.acs.org/doi/10.1021/acs.chemrev.3c00028).
-
-
+* Damien Woods
+* Constantine Glen Evans
+	* Was working with Winfree, Arvind Murugan, and in Wood's lab as a postdoc
+	* He also has his own company ([link](https://evansfmm.org/))
+	* Arvind Murugan
