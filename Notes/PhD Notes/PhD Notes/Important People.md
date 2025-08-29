@@ -22,3 +22,5 @@
 	* Was working with Winfree, Arvind Murugan, and in Wood's lab as a postdoc
 	* He also has his own company ([link](https://evansfmm.org/))
 	* Arvind Murugan
+* David Doty: [link](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1ddBSr8AAAAJ&citation_for_view=1ddBSr8AAAAJ:abG-DnoFyZgC). 
+* Jacobs (was in Daan Frenkel's group) at Princton: [link](https://jacobs.princeton.edu/). 

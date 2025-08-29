@@ -13,4 +13,5 @@
 * Visual GEC
 * DNA Beyond genes book from Springer [link](https://link.springer.com/book/10.1007/978-3-030-36434-2).
 * FracTile Compiler by Qian's lab at Catech: [link](https://qianlab.caltech.edu/FracTileCompiler/). Upload your image and it will give how to make a set of specific DNA structures to make that image.
-* 
+* #TODO A good formulation of Hierarchical self assembly: [link](https://web.cs.ucdavis.edu/~doty/papers/hsa.pdf). #TODO Also take a look at the references of this work.
+* #TODO #Important #Software Matriach: A python library for material design: [link](https://pmc.ncbi.nlm.nih.gov/articles/PMC4996638/#:~:text=The%20language%20of%20materials%20architecture,into%20hierarchies%20of%20arbitrary%20depth). This is also connected to Category theoretical language design.
