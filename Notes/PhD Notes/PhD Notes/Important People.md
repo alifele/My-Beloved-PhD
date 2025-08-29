@@ -24,3 +24,13 @@
 	* Arvind Murugan
 * David Doty: [link](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=1ddBSr8AAAAJ&citation_for_view=1ddBSr8AAAAJ:abG-DnoFyZgC). 
 * Jacobs (was in Daan Frenkel's group) at Princton: [link](https://jacobs.princeton.edu/). 
+* Matthew Cook: [link](https://scholar.google.com/citations?user=eFVeYUIAAAAJ&hl=en)
+	* He proved that rule 110 is Turing complete
+	* He also presented a work at DNA 27 that solves a maze ([link](https://arxiv.org/pdf/2106.12341))
+	* He as diverse research papers from percolation to cellular automata
+* Self assembly lab at MIT:
+	* They have very interesting videos [link](https://selfassemblylab.mit.edu/mass/2018/1/5/autonomous-mass-assembly). 
+* David Soloveichik [link](https://www.solo-group.link/members/david-soloveichik). On many papers with Doty
+	* He done his PhD with Winfree in 2008 ([link to thesis](https://www.dna.caltech.edu/Papers/soloveichik-thesis.pdf)). 
+	* Local determinism proof 
+	* Computation with Finite Stochastic Chemical Reaction Networks
