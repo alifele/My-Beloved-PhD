@@ -12,3 +12,5 @@
 * Visual SDS
 * Visual GEC
 * DNA Beyond genes book from Springer [link](https://link.springer.com/book/10.1007/978-3-030-36434-2).
+* FracTile Compiler by Qian's lab at Catech: [link](https://qianlab.caltech.edu/FracTileCompiler/). Upload your image and it will give how to make a set of specific DNA structures to make that image.
+* 
