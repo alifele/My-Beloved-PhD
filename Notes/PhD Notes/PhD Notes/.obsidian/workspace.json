@@ -180,14 +180,23 @@
               "icon": "layout-list",
               "title": "GCal Schedule View"
             }
+          },
+          {
+            "id": "63bd0611af875bb0",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,7 +207,10 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "terminal:Open terminal": false
+      "terminal:Open terminal": false,
+      "smart-connections:Open: Smart Chat": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": true
     }
   },
   "active": "ff4e4c2fabe8b2d8",
