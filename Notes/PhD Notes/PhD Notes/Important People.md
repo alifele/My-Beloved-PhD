@@ -34,3 +34,6 @@
 	* He done his PhD with Winfree in 2008 ([link to thesis](https://www.dna.caltech.edu/Papers/soloveichik-thesis.pdf)). 
 	* Local determinism proof 
 	* Computation with Finite Stochastic Chemical Reaction Networks
+* Nataša Jonoska [link](https://knot.math.usf.edu/jonoska/research.html), [link](https://knot.math.usf.edu/index.html).
+	* Discrete and topological models for DNA assembly
+	* 
