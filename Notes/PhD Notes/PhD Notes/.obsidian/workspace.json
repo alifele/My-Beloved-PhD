@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "266698f38da8ed17",
+        "id": "fc85229cf8f6c90b",
         "type": "tabs",
         "children": [
           {
-            "id": "a74fd2e6a2143099",
+            "id": "ff4e4c2fabe8b2d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Important Reources.md",
+                "file": "Daily Notes/2025-08-29.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Important Reources"
+              "title": "2025-08-29"
             }
           }
         ]
@@ -201,14 +201,15 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "a74fd2e6a2143099",
+  "active": "ff4e4c2fabe8b2d8",
   "lastOpenFiles": [
     "Important People.md",
-    "Hierarchical self-assembly and finite automata.md",
+    "Masami.md",
     "Daily Notes/2025-08-29.md",
+    "Important Reources.md",
+    "Hierarchical self-assembly and finite automata.md",
     "().md",
     "Warnings of PhD!.md",
-    "Important Reources.md",
     "Images/Pasted image 20250829084837.png",
     "Daily Notes/2025-08-28.md",
     "Daily Notes/2025-08-27.md",
