@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Notes/2025-08-29.md",
+                "file": "Daily Notes/2025-08-30.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-29"
+              "title": "2025-08-30"
             }
           }
         ]
@@ -215,9 +215,10 @@
   },
   "active": "ff4e4c2fabe8b2d8",
   "lastOpenFiles": [
+    "Daily Notes/2025-08-29.md",
+    "Daily Notes/2025-08-30.md",
     "Important People.md",
     "Masami.md",
-    "Daily Notes/2025-08-29.md",
     "Important Reources.md",
     "Hierarchical self-assembly and finite automata.md",
     "().md",
