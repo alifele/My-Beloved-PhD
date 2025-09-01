@@ -22,6 +22,23 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\tile}[1]{\fbox{{#1}}}
 
+\usepackage{tikz}
+\usepackage{xparse}
+
+\NewDocumentCommand{\T}{>{\SplitList{,}}m}{%
+	\ProcessList{#1}{\PlaceOnSquare}%
+}
+
+\newcommand{\PlaceOnSquare}[4]{%
+	\tikz[baseline=(sq.base),scale=0.6]{%
+		\node[draw,minimum size=1cm,inner sep=0pt] (sq) {};
+		\node[font=\tiny,above] at (sq.north) {#1};
+		\node[font=\tiny,right] at (sq.east)  {#2};
+		\node[font=\tiny,below] at (sq.south) {#3};
+		\node[font=\tiny,left]  at (sq.west)  {#4};
+	}%
+}
+
 
 
 \theoremstyle{definition}
@@ -88,11 +105,33 @@
 	
 	
 	\subsection{One Possible Formulation}
+	Let's assume that the set of all possible glues types is given as alphabet $ G $. For instance, if we have 3 types of glue, then one has $ G = \{g_1,g_2,g_3\} $. Assuming that we work in a 2d grid, consider $ T = G^4 $ or equivalently the set of all strings composed of alphabet in $ G $. For instance, if $ G $ is as given above, then
+	\[ \mathcal{T} = \{ g_1g_1g_1g_1,\ g_1g_1g_1g_2,\ g_1g_1g_2g_1,\cdots, g_3g_3g_3g_3. \} \]
+	This is the set of all possible tiles. Note that given a combination of glue alphabet, we might not have all of the tiles in $ \mathcal{T} $. For instance, for $ G $ as given above, in one problem we might have only two tiles. For instance:
+	\input{images/twoTilesWithGlue.tex}
 	
+	Observe that if we assume that these tiles are floating in some kind of solution, thus can rotation, then the tiles corresponding to the codes $ g_1g_2g_2g_1,\ g_2g_2g_1g_1,\ g_2g_1g_1g_2 $ as well as $ g_3g_1g_3g_2,\ g_1g_3g_2g_3,\ g_3g_2g_3g_1  $ will be possible tiles as well. And if tiles can also flip, then all of the permutations in the dihedral group $ D_4 $ will also be possible tiles. In any case, denote the set of all available tiles as $ T \subset\mathcal{T} $. So for the tiles above, that can not rotate nor flip, we have $ T=\{g_1g_1g_2g_2,\ g_2g_3g_1g_3\}. $
+		
+		
+	Given the set of all glue values, then one has a glue strength map $ s: G\times G \to \mathbb{R}_{+} $. It is straight forward to see that this map is symmetric. Given the minimum strength required for two tiles to bind, denoted by $ \tau $, that represents the notion of temperature in aTAM model, we build two directed graphs $ A_h = (T, E_h) $ and $ A_v = (T,E_v) $, where ``h'' and ``v'' stands for horizontal and vertical respectively, and we have used the standard notation for graph $ G=(V,E) $ where $ V $ represents the set of all vertices, and $ E $ represents the set of all edges. 
+	
+	Now we want to construct the edge sets $ E_h $ and $ E_v $. In words, there is arrow from $ t_1 $ to $ t_2 $ in $ A_v $ if $ t_2 $ can sit on top of $ t_1 $. And similarly, $ t_1 $ is arrowed (?!) to $ t_2 $ if $ t_2 $ can sit on the right side of $ t_1 $. To write this more formally, first observe that when two tiles bind, then the ``North'' part of one touches the ``South'' part of the other one, or, the ``East'' part of one will touch  the ``West'' part of the other tile. Recall that for the tile $ g_1g_1g_2g_2 $, we assume that the glues are represented in the ``North-East-South-West'' order. In the graph $ A_h $, there is an arrow from $ t_1 $ to $ t_2 $ if $ s(t_1(N), t_2(S)) > \tau $. Similarly, there is an arrow from $ t_1 $ to $ t_2 $ in $ A_h $ if $ s(t_1(E),t_2(W)) > \tau $. For instance, for the example above, assume the following strength matrix for the glue-glue interaction
+	\[ s = \begin{pmatrix}
+		1 & 0 & 1 \\
+		0 & 1 & 0 \\
+		1 & 0 & 0
+	\end{pmatrix}, \]
+	So the directed graph $ A_v $ and $ A_h $ will be
+	\input{images/A_hA_vTwoTiles.tex}
+	
+	For the sake of completeness, assuming the possibility of rotation, then the set of possible tiles will be
+	\input{images/tilesWithRotation.tex}
 	
 	
 	
 	\section{Discussion}
-	One important implication of this approach is that one can easily change the underlying grid structure with hexagonal grids, and etc. 
+	One important implication of this approach is that one can easily change the underlying grid structure with hexagonal grids, and etc.
+	
+	
 	
 \end{document}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.26)  31 AUG 2025 19:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.26)  31 AUG 2025 20:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -707,51 +707,57 @@ File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-\c@definition=\count322
-\c@remark=\count323
-\c@theorem=\count324
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
 
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count325
-\l__color_backend_stack_int=\count326
-\g__color_backend_stack_int=\count327
-\g__graphics_track_int=\count328
+\c__kernel_sys_dvipdfmx_version_int=\count322
+\l__color_backend_stack_int=\count323
+\g__color_backend_stack_int=\count324
+\g__graphics_track_int=\count325
 \l__pdf_internal_box=\box65
-\g__pdf_backend_object_int=\count329
-\g__pdf_backend_annotation_int=\count330
-\g__pdf_backend_link_int=\count331
-) (./TilingAndTopology.aux)
+\g__pdf_backend_object_int=\count326
+\g__pdf_backend_annotation_int=\count327
+\g__pdf_backend_link_int=\count328
+))
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+\c@definition=\count329
+\c@remark=\count330
+\c@theorem=\count331
+ (./TilingAndTopology.aux)
 \openout1 = `TilingAndTopology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -787,21 +793,21 @@ LaTeX Font Info:    ... okay on input line 42.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 42.
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+Package hyperref Info: Link coloring ON on input line 59.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 (./TilingAndTopology.out) (./TilingAndTopology.out)
 \@outlinefile=\write4
 \openout4 = `TilingAndTopology.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -814,26 +820,28 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 75.
+t line 92.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 81.
- [2] (./TilingAndTopology.aux)
+ line 98.
+ (./images/twoTilesWithGlue.tex)
+Overfull \hbox (23.37924pt too wide) in paragraph at lines 113--114
+\T1/lmr/m/n/10.95 then the tiles cor-re-spond-ing to the codes $\OML/cmm/m/it/1
+0.95 g[]g[]g[]g[];  g[]g[]g[]g[];  g[]g[]g[]g[]$ \T1/lmr/m/n/10.95 as well as $
+\OML/cmm/m/it/10.95 g[]g[]g[]g[];  g[]g[]g[]g[];  g[]g[]g[]g[]$
+ []
 
-Package rerunfilecheck Warning: File `TilingAndTopology.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `TilingAndTopology.out':
-(rerunfilecheck)             Before: 7F197893CDDFDC8CC914208E9E04AB3E;426
-(rerunfilecheck)             After:  5DA32ABAF014E00420E5D4621CD71F30;609.
+[2] (./images/A_hA_vTwoTiles.tex) (./images/tilesWithRotation.tex) [3]
+(./TilingAndTopology.aux)
+Package rerunfilecheck Info: File `TilingAndTopology.out' has not changed.
+(rerunfilecheck)             Checksum: 5DA32ABAF014E00420E5D4621CD71F30;609.
  ) 
 Here is how much of TeX's memory you used:
- 23219 strings out of 476191
- 435199 string characters out of 5812072
- 727799 words of memory out of 5000000
- 43539 multiletter control sequences out of 15000+600000
- 509016 words of font info for 72 fonts, out of 8000000 for 9000
+ 23331 strings out of 476191
+ 438054 string characters out of 5812072
+ 731809 words of memory out of 5000000
+ 43633 multiletter control sequences out of 15000+600000
+ 512653 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,7n,94p,1120b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,8n,94p,1120b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TilingAndTopology.pdf (2 pages).
+Output written on TilingAndTopology.pdf (3 pages).
