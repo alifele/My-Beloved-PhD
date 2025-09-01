@@ -1,0 +1,98 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=cyan]{hyperref}
+\usepackage{natbib} 
+\usepackage{tkz-graph}
+\usepackage{placeins}
+
+
+\newcommand{\grad}{\operatorname{grad}}
+\newcommand{\curl}{\operatorname{curl}}
+\renewcommand{\div}{\operatorname{div}}
+\newcommand{\img}{\operatorname{img}}
+\renewcommand{\span}{\operatorname{span}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\tile}[1]{\fbox{{#1}}}
+
+
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\title{Some topological insights to the tiling problem on $ \Z^d $}
+\author{Ali Fele Paranj}
+
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+
+
+\begin{document}
+	
+	\maketitle
+	\begin{abstract}
+		In this document I will translates some of the problems in tiling self-assembly to the language of analysis and topology, hoping to open the was for using ergodic theory and other interesting analytical tools. 
+	\end{abstract}
+	
+	
+	\section{Introduction}
+	
+	Let's consider the set of all 2D tiles over the final alphabet $\Sigma$. The set of all such possible tilings is 
+	$$ \Sigma^{\mathbb{Z}^2}, $$
+	which is the same as the set of all functions from $\mathbb{Z}^2$ to $\Sigma$. 
+	
+	First, observe that since the alphabet is finite, assuming that it has $N$ elements, then one can write $[n] = \{1,2,3,\cdots,n\}$ in place of $\Sigma$. As far as the set structure of $\Sigma$ is considered, it is fine to do so. However, seeing these two spaces as topological spaces, one automatically assumes a discrete topology over the set $\Sigma$, however, in the case of $[n]$ one automatically assumes that 2 is "close" to 1 and 3 and far from $n$. So we might exploit this topological property of the alphabet set in deciding which tilling is plausible and which is not: based on their gluing structure, that a tile of certain type is willing to be close to the tiles of other type. Then one can possibly encode the plausible tiles as functions that are continuous given the topology of their domain $\mathbb{Z}^2$ and their range $\Sigma$. For more about the intuition behind the method see my notes in this \href{https://github.com/alifele/Lecture-Notes/blob/main/Scientific%20Notes/Some%20Intuitions%20on%20Continuous%20Maps/GraphHomologyAndCohomology.pdf}{link}.
+	
+	
+	\section{Simple Setup}
+	Define the $ d_1 $ metric on $ \Z^2 $, where
+	\[ d_1\left( (n_1,n_2), (m_1,m_2) \right) = |n_1-n_2| + |m_1-m_2|. \]
+	This will induce the topology where the smallest open balls are the Moor neighborhoods (see the first chapter of my \href{https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0449873}{thesis} for more on this.) Also assume that we have three types of tiles $ \{ \tile{A}, \tile{B}, \tile{C} \}. $ Assuming that every tile can sit with itself (this can be relaxed later by constructing large enough product space), then the notion of ``certain tiles want to it close to certain other tiles'' will induce a partition on the set of tiles (because it is a equivalence relation). Consider the topology whose sub-basis is this partition of the set. The following figure demonstrates this partition.
+	
+	\input{images/tiles.tex}
+	
+	Given this ``topology'' on the set of possible tiles, then the following demonstrates two tilings, where the one on the left is a valid tiling, but the one on the right is not a valid tiling.
+	
+	\input{images/valid_notValid.tex}
+	
+	\FloatBarrier
+	
+	So given the intuition above, one can come up with the following theorem
+	
+	\begin{theorem}
+		In the tiling problem above, a tiling is valid, if and only if its corresponding tiling function is continuous.
+	\end{theorem}
+	
+	
+	
+	\begin{remark}
+		One possible way to formulate this is to assume a discrete topology on $ \Z^2 $, which will force every tiling map to be continuous. However, then, the tiling maps corresponding to valid tiling will precisely be the open maps (the maps that the image of open sets are open sets). 
+	\end{remark}
+	
+	
+	\section{Tiles with Glue}
+	
+	In the example above, we only considered some that some of them want to sit with some other ones and do not sit with certain other ones. However, the way that the tiling problem is formulated in the literature is to assume tiles with different combination of glue values on the sides. I think I can convert this problem to the one similar to above, by considering a sufficiently large product space that captures glue-glue interactions. I know that each glue glue interaction can be captured by a matrix, but I an not certain how to define approporiate topology to convert this formulation to the one similar to above.
+	
+	
+	\subsection{One Possible Formulation}
+	
+	
+	
+	
+	\section{Discussion}
+	One important implication of this approach is that one can easily change the underlying grid structure with hexagonal grids, and etc. 
+	
+\end{document}
