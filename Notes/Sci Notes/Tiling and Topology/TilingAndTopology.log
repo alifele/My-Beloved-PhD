@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.26)  1 SEP 2025 12:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.26)  1 SEP 2025 14:01
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -841,17 +841,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] [5] (./TilingAndTopology.aux)
+[4] (./images/connectivityBetweenEquivalenceClassesA_h.tex)
+(./images/hexAndOctTiles.tex) [5] (./images/tilesWithRotation_Group.tex)
+(./images/simpleExamplePermutationGroup.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6] [7] (./TilingAndTopology.aux)
 Package rerunfilecheck Info: File `TilingAndTopology.out' has not changed.
-(rerunfilecheck)             Checksum: 5DA32ABAF014E00420E5D4621CD71F30;609.
+(rerunfilecheck)             Checksum: B6687ABA39E1877F9A25EC8048AFDD34;820.
  ) 
 Here is how much of TeX's memory you used:
- 23353 strings out of 476191
- 438907 string characters out of 5812072
- 736632 words of memory out of 5000000
- 43649 multiletter control sequences out of 15000+600000
- 512653 words of font info for 76 fonts, out of 8000000 for 9000
+ 23425 strings out of 476191
+ 440587 string characters out of 5812072
+ 749622 words of memory out of 5000000
+ 43704 multiletter control sequences out of 15000+600000
+ 517841 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,8n,94p,1120b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TilingAndTopology.pdf (5 pages).
+Output written on TilingAndTopology.pdf (7 pages).
