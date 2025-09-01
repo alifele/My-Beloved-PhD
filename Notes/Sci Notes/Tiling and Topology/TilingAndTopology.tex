@@ -115,7 +115,7 @@
 		
 	Given the set of all glue values, then one has a glue strength map $ s: G\times G \to \mathbb{R}_{+} $. It is straight forward to see that this map is symmetric. Given the minimum strength required for two tiles to bind, denoted by $ \tau $, that represents the notion of temperature in aTAM model, we build two directed graphs $ A_h = (T, E_h) $ and $ A_v = (T,E_v) $, where ``h'' and ``v'' stands for horizontal and vertical respectively, and we have used the standard notation for graph $ G=(V,E) $ where $ V $ represents the set of all vertices, and $ E $ represents the set of all edges. 
 	
-	Now we want to construct the edge sets $ E_h $ and $ E_v $. In words, there is arrow from $ t_1 $ to $ t_2 $ in $ A_v $ if $ t_2 $ can sit on top of $ t_1 $. And similarly, $ t_1 $ is arrowed (?!) to $ t_2 $ if $ t_2 $ can sit on the right side of $ t_1 $. To write this more formally, first observe that when two tiles bind, then the ``North'' part of one touches the ``South'' part of the other one, or, the ``East'' part of one will touch  the ``West'' part of the other tile. Recall that for the tile $ g_1g_1g_2g_2 $, we assume that the glues are represented in the ``North-East-South-West'' order. In the graph $ A_h $, there is an arrow from $ t_1 $ to $ t_2 $ if $ s(t_1(N), t_2(S)) > \tau $. Similarly, there is an arrow from $ t_1 $ to $ t_2 $ in $ A_h $ if $ s(t_1(E),t_2(W)) > \tau $. For instance, for the example above, assume the following strength matrix for the glue-glue interaction
+	Now we want to construct the edge sets $ E_h $ and $ E_v $. In words, there is arrow from $ t_1 $ to $ t_2 $ in $ A_v $ if $ t_2 $ can sit on top of $ t_1 $. And similarly, $ t_1 $ is arrowed (?!) to $ t_2 $ if $ t_2 $ can sit on the right side of $ t_1 $. To write this more formally, first observe that when two tiles bind, then the ``North'' part of one touches the ``South'' part of the other one, or, the ``East'' part of one will touch  the ``West'' part of the other tile. Recall that for the tile $ g_1g_1g_2g_2 $, we assume that the glues are represented in the ``North-East-South-West'' order. In the graph $ A_h $, there is an arrow from $ t_1 $ to $ t_2 $ if $ s(t_1(N), t_2(S)) > \tau $. Similarly, there is an arrow from $ t_1 $ to $ t_2 $ in $ A_h $ if $ s(t_1(E),t_2(W)) > \tau $. For instance, for the example above, and assuming $ \tau=1/2 $, assume the following strength matrix for the glue-glue interaction
 	\[ s = \begin{pmatrix}
 		1 & 0 & 1 \\
 		0 & 1 & 0 \\
@@ -126,6 +126,20 @@
 	
 	For the sake of completeness, assuming the possibility of rotation, then the set of possible tiles will be
 	\input{images/tilesWithRotation.tex}
+	
+	where for the convenience we have assigned labels for each tile. The $ A_v $ graph for this set of tiles will be as the following graph, where the one on the left is $ A_v $ and the one on the right is $ A_h $.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/A_vA_hwithRotation.png}
+		\label{fig:graph}
+	\end{figure}
+	
+	\FloatBarrier
+	
+	and one can do a similar computation to calculate the $ A_h $ graph.
+	
+	
 	
 	
 	

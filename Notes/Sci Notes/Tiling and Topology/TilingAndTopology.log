@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.26)  31 AUG 2025 20:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.26)  31 AUG 2025 21:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -830,18 +830,24 @@ Overfull \hbox (23.37924pt too wide) in paragraph at lines 113--114
 \OML/cmm/m/it/10.95 g[]g[]g[]g[];  g[]g[]g[]g[];  g[]g[]g[]g[]$
  []
 
-[2] (./images/A_hA_vTwoTiles.tex) (./images/tilesWithRotation.tex) [3]
-(./TilingAndTopology.aux)
+[2] (./images/A_hA_vTwoTiles.tex) (./images/tilesWithRotation.tex)
+File: images/A_vA_hwithRotation.png Graphic file (type bmp)
+<images/A_vA_hwithRotation.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3] [4] (./TilingAndTopology.aux)
 Package rerunfilecheck Info: File `TilingAndTopology.out' has not changed.
 (rerunfilecheck)             Checksum: 5DA32ABAF014E00420E5D4621CD71F30;609.
  ) 
 Here is how much of TeX's memory you used:
- 23331 strings out of 476191
- 438054 string characters out of 5812072
- 731809 words of memory out of 5000000
- 43633 multiletter control sequences out of 15000+600000
+ 23342 strings out of 476191
+ 438332 string characters out of 5812072
+ 731863 words of memory out of 5000000
+ 43641 multiletter control sequences out of 15000+600000
  512653 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,8n,94p,1120b,748s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TilingAndTopology.pdf (3 pages).
+Output written on TilingAndTopology.pdf (4 pages).
