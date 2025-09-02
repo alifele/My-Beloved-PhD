@@ -44,6 +44,7 @@
 
 \theoremstyle{definition}
 \newtheorem{theorem}{Theorem}
+\newtheorem{observation}{Observation}
 
 
 \begin{document}
@@ -166,6 +167,9 @@
 	\input{images/hexAndOctTiles.tex}
 	However, for these tiles with more number of sides, if we enable the rotation of flipping of tiles, then the tile-tile interaction graph gets very crowded very fast. So we want to utilize as much of the symmetry as possible.
 	
+	
+	\subsubsection{Utilizing the Symmetries}
+	
 	For now, consider we have three types of glue $ G = \{g_1,g_2,g_3\} $, and only one tile  that has the glue profile $  g_1g_2g_3g_1  $, denoted by $ t $. Furthermore, consider the following glue-glue interaction matrix
 	\[ s = \begin{pmatrix}
 		0 & 0 & 1 \\
@@ -186,10 +190,65 @@
 	where the multiplication $ \cdot $ should be interpreted as multiplying every element in the set. Using the glue-glue interaction matrix we will get
 	\input{images/simpleExamplePermutationGroup.tex}
  	\FloatBarrier
+ 	
+ 	
+ 	\subsubsection{A Complete Worked Example}
+ 	
+ 	To demonstrate the capabilities of this approach, here we are presenting a complete worked example where we have 4 type of glue $ g = \{g_1,g_2,g_3,g_4\} $, and 5 types of tiles
+ 	\[ T = \{ \tile{t_1},\tile{t_2},\tile{t_3},\tile{t_4},\tile{t_5} \}, \]
+ 	where
+ 	\[ t_1=g_3g_1g_4g_2,\quad t_2=g_2g_2g_3g_1,\quad t_3=g_4g_1g_4g_3,\quad t_4=g_1g_3g_2g_2,\quad t_5=g_2g_4g_1g_3. \]
+ 	Also, assume that the following glue-glue interaction is given:
+ 	\[ 
+ 	s = \begin{pmatrix}
+ 		1 & 1 & 0 & 1\\
+ 		1 & 1 & 1 & 0\\
+ 		0 & 1 & 0 & 1\\
+ 		1 & 0 & 1 & 0
+ 	\end{pmatrix}.
+ 	 \]
+ 	Also assume that we allow rotations. Let $ \sigma $ denote the counterclockwise rotation, i.e. $ \sigma t_1 = g_1g_4g_2g_3 $, and etc. Now it is easy to build the equivalence classes corresponding to the $ N $ relation:
+ 	\[ [g_1]_N = \{ \sigma^1t_1, \sigma^3t_2, \sigma^1t_3, \sigma^0t_4, \sigma^2t_5 \}, \]
+ 	\[ [g_2]_N = \{ \sigma^3t_1, \sigma^0t_2, \sigma^1t_2, \sigma^2t_4, \sigma^3t_4, \sigma^0t_5\}, \]
+ 	\[ [g_3]_N = \{ \sigma^0t_1, \sigma^2t_2, \sigma^3t_3, \sigma^1t_4, \sigma^3t_5 \}, \]
+ 	\[ [g_4]_N = \{ \sigma^2t_1, \sigma^0t_3, \sigma^2t_3, \sigma^1t_5 \}. \]
+ 	Using the laws discussed above, it is easy to calculate the equivalence classes for other relations as well. For $ W $:
+ 	\[ [g_1]_W = \sigma [g_1]_N = \{ \sigma^2t_1, \sigma^0t_2, \sigma^2t_3, \sigma^1t_4, \sigma^3t_5 \}, \]
+ 	\[ [g_2]_W = \{ \sigma^0t_1, \sigma^1t_2, \sigma^2t_2, \sigma^3t_4, \sigma^0t_4, \sigma^1t_5\}, \]
+ 	\[ [g_3]_W  = \{ \sigma^1t_1, \sigma^3t_2, \sigma^0t_3, \sigma^2t_4, \sigma^0t_5 \},  \]
+ 	\[ [g_4]_W = \{ \sigma^3t_1, \sigma^1t_3, \sigma^3t_3, \sigma^2t_5 \}, \]
+ 	for $ S $:
+ 	\[ [g_1]_S = \{ \sigma^3t_1, \sigma^1t_2, \sigma^3t_3, \sigma^2t_4, \sigma^0t_5 \}, \]
+ 	\[ [g_2]_S = \{ \sigma^1t_1, \sigma^2t_2, \sigma^3t_2, \sigma^0t_4, \sigma^1t_4, \sigma^2t_5\}, \]
+ 	\[ [g_3]_S  = \{ \sigma^2t_1, \sigma^0t_2, \sigma^1t_3, \sigma^3t_4, \sigma^1t_5 \},  \]
+ 	\[ [g_4]_S = \{ \sigma^0t_1, \sigma^2t_3, \sigma^0t_3, \sigma^3t_5 \}, \]
+ 	for $ E $:
+ 	\[ [g_1]_E = \{ \sigma^0t_1, \sigma^2t_2, \sigma^0t_3, \sigma^3t_4, \sigma^1t_5 \}, \]
+ 	\[ [g_2]_E = \{ \sigma^2t_1, \sigma^3t_2, \sigma^0t_2, \sigma^1t_4, \sigma^2t_4, \sigma^3t_5\}, \]
+ 	\[ [g_3]_E  = \{ \sigma^3t_1, \sigma^1t_2, \sigma^2t_3, \sigma^0t_4, \sigma^2t_5 \},  \]
+ 	\[ [g_4]_E = \{ \sigma^1t_1, \sigma^3t_3, \sigma^1t_3, \sigma^0t_5 \}, \]
+ 	and so on. Using the glue-glue interaction matrix, the connection between partitions will be as follows
+ 	\input{images/fullExample.tex}
+ 	\FloatBarrier
+ 	Using these graphs one can easily check that the following tiling in the form of a question mark is indeed a valid tiling:
+ 	\input{images/QuestionMark.tex}
+ 	
 	
 	
 	\section{Discussion}
-	One important implication of this approach is that one can easily change the underlying grid structure with hexagonal grids, and etc.
+	The formulation above is very promising for me. One possible reason for this is the following observation:
+	\begin{observation}
+		Any valid tiling corresponds the branching annihilating random walks on the graph $ A = A_v \oplus A_h $, where $ \oplus $ operation adds a bidirectional edge between two nodes with the same name on $ A_v $ and $ A_h $.
+	\end{observation}
+	So it opens up lots of useful results form stochastic processes and and probability theory. Furthermore, seeing these graphs as the state space of some Markov chain and the long term properties of this chain can have real world implications of the possible assemblies. 
+	
+	Furthermore, one can add different weights to the edges, corresponding to the strength of the corresponding glue-glue interaction. Then certain path's on the graph will be more probable than the other ones, and using the observation above, regarding the correspondence between branching-annihilating walks on $ A $ and valid tile assemblies, this translates to higher possibility of observing certain assemblies compared to other ones.
+	
+	Also, the graph $ A $ if very similar to the state space of a Turing machine, and I am also curious to see what will be the tiling implications of certain finite automate designs, like the ones that can detect certain string patterns etc.
+	
+	Furthermore, encoding all the valid tilings in $ A $, then one can design ``smart'' tiles. For instance, the tiles that are dead end and once a random walker gets there can not get out. This kind of tile would correspond to the ``capping'' tiles that stop the growth in certain direction.
+	
+	Furthermore, it is very straightforward to extend this formulation for cubic tiles in 3D, or other tiles like hexagonal tiles in 2D. For instance, in the case of $ 3D $ cubes, if we allow rotation, then we would have two rotation operators $ \sigma $ and $ \tau $, and we will consider different powers of these operators from 0 to 3. In the case of hexagonal lattice, we will still have one rotation $ \sigma $, which is 60 degrees counterclockwise rotation, and we will have the powers $ 0 $ to $ 5 $ of this operator. So different tiling grids and different dimensions will only translate to richer rotation operators.  
 	
 	
 	
